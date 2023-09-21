@@ -132,14 +132,6 @@ fn main() {
         // }
 
         // let mut tree: Vec<Node> = Vec::new();
-        fn parseToken (token: &'a Token, tokens: &Vec<Token>) -> Node<'a> {
-            let token_pos = tokens.iter().position(|t| &t == &token).unwrap();
-            let next_token = tokens.get(token_pos + 1);
-
-            Node {left: token, right: next_token}
-        }
-
-        parseToken(&tokens[0], &tokens);
 
         // println!("Parsed. Tree: {:?}", tree);
     }
